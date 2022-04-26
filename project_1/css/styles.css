@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: lightskyblue;
+}
+
+
+h1 { 
+  text-align: center;
+
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  padding-left: 10px;  
+  display: none;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+/* Expanding image text */
+#imgtext {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: blue;
+  font-size: 50px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute; 
+  top: 10px;
+  left: 15px;
+  color: red;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>My Funny Cat</h1>
+
+    <div class="row">
+        <div class="column">
+          <img name="img01" id="img01" src="imgs/fat_cat_curious.jpg" border="5" bordercolor="#000000" title="Curious Cat" 
+           onmouseover="setTitle(this);" alt="My cat always on the lookout!" style="width:100%" 
+           onclick="myFunction(this);javascript:fnChangeBorder('img01');">
+          <div class="desc"></div>
+        </div>
+
+        <div class="column">
+          <img name="img02" id="img02" src="imgs/fat_cat_doubtful.jpg" border="5" bordercolor="#000000" title="Doubtful Cat" 
+           onmouseover="setTitle(this);" alt="This cat seriously doubts you!" style="width:100%" 
+           onclick="myFunction(this);javascript:fnChangeBorder('img02');">
+          <div class="desc"></div>
+        </div>
+
+        <div class="column">
+          <img name="img03" id="img03" src="imgs/fat_cat_happy_hour.jpg" border="5" bordercolor="#000000" title="Happy Hour Cat"
+           onmouseover="setTitle(this);" alt="Happy hour is over, buddy!" style="width:100%" 
+           onclick="myFunction(this);javascript:fnChangeBorder('img03');">
+          <div class="desc"></div>
+        </div>
+
+        <div class="column">
+          <img name="img04" id="img04" src="imgs/fat_cat_learning_networks.jpg" border="5" bordercolor="#000000" title="Low-Profile Hacker Cat" 
+           onmouseover="setTitle(this);" alt="IP address what???" style="width:100%" 
+           onclick="myFunction(this);javascript:fnChangeBorder('img04');">
+          <div class="desc"></div>
+        </div>
+
+        <div class="column">
+            <img name="img05" id="img05" src="imgs/fat_cat_sleepy.jpg" border="5" bordercolor="#000000" title="Sleepy Cat" 
+             onmouseover="setTitle(this);" alt="Time for an afternoon cat-nap!" style="width:100%"
+             onclick="myFunction(this);javascript:fnChangeBorder('img05');">
+            <div class="desc"></div>
+          </div>
+      </div>
+      
+      <!-- The expanding image container -->
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:50%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+
+       <script src="js/image_gallery.js"></script>
+
+</body>
+</html>
